@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022 Election Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">2022 Election Survey</h1>
+            <p id="description" class="description text-center">
+                Thank you for taking the time to contribute to the platform's improvement.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Your status</option>
+                    <option value="student">Voter</option>
+                    <option value="job">Under 18</option>
+                    <option value="learner">Non citizen</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <p>Would you recommend Raila?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Definitely Yes</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe/50%</label>
+    
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </div>
+    
+            <div class="form-group">
+                <p>
+                    What is your favourite political party?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Azimio</option>
+                    <option value="projects">Jubilee</option>
+                    <option value="community">UDA</option>
+                    <option value="openSource">MBUS</option>
+                    <option value="openSource">others</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <p>
+                    What would you like to see improved in our Country?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+    
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+                    Health</label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />
+                    Infrastructure</label>
+                <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />
+                    Education</label>
+                <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Land and Labour</label>
+                <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Ending
+                    Corruption </label>
+                <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Employent Opportunities
+                    </label>
+                <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Tax Payment</label>
+                <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />
+                    Leadership</label>
+                <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Jobs </label>
+                <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" /> Youth Forum</label>
+                <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional
+                    Views</label>
+            </div>
+    
+            <div class="form-group">
+                <p>Do you have any thoughts or ideas?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..." required></textarea>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+<hr>
+mikecode945@gmail.com
+</html>
